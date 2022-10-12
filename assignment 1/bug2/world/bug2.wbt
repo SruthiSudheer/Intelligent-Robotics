@@ -1,0 +1,50 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.34353501461009534 0.6434470278685123 0.6840757385436351 1.3254402200680955
+  position -2.8800566685708846 -3.547132967120789 5.682876742491265
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  appearance Parquetry {
+    type "light strip"
+  }
+}
+WoodenBox {
+  translation 0 -0.28 0.2
+  size 0.5 0.5 0.5
+}
+WoodenBox {
+  translation -1.28 -0.9 0.17
+  name "wooden box(1)"
+  size 0.5 0.5 0.5
+}
+WoodenBox {
+  translation 0.48 -1.19 0.2
+  name "wooden box(2)"
+  size 0.5 0.5 0.5
+}
+WoodenBox {
+  translation 1.68 -0.79 0.2
+  name "wooden box(3)"
+  size 0.5 0.5 0.5
+}
+Obstacle {
+  translation 2.5 -0.8 0
+}
+DEF e-puck E-puck {
+  translation -2 -1 0
+  controller "my_controller"
+  supervisor TRUE
+  turretSlot [
+    DistanceSensor {
+      type "sonar"
+    }
+    GPS {
+    }
+  ]
+}
