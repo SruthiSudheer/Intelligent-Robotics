@@ -1,4 +1,4 @@
-"""bug2_incomplete controller."""
+"""bug2_controller controller."""
 
 from controller import Supervisor
 from math import sqrt
