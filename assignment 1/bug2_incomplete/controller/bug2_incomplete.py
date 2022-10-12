@@ -40,7 +40,7 @@ def desired_orientation():
 def robot(supervisor):
     global destination,start_point
     timestep = 32
-    destination = [2.5,-0.8,0]
+    destination = [0,0.5,0]
     start_point = [0.5,-1,0]
     
     node = supervisor.getFromDef("e-puck")
