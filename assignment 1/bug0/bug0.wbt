@@ -1,0 +1,67 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5790337685261452 0.4881078400853762 0.6530471892241778 2.135145210251941
+  position -0.20122263269990665 -0.911574904271243 8.701501625060661
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  appearance Parquetry {
+    type "light strip"
+  }
+}
+Obstacle {
+  translation 0 2 0
+  color 1 1 0
+}
+Wall {
+  translation -1.9 0.000207045 0.24
+  rotation 1 0 0 -1.57
+  size 0.1 0.5 3
+}
+Wall {
+  translation 1.15 0 0.13
+  rotation 1 0 0 -1.57
+  name "wall(1)"
+  size 0.1 0.5 3
+}
+Wall {
+  translation 0.0493022 0.979999 0.21916
+  rotation -0.5771958946291473 0.5771958946291473 0.5776588945446237 -2.093935307179586
+  name "wall(2)"
+  size 0.1 0.5 2
+}
+Wall {
+  translation 1.1893 0.0599961 0.218248
+  rotation -0.5771958946291473 0.5771958946291473 0.5776588945446237 -2.093935307179586
+  name "wall(4)"
+  size 0.1 0.5 2
+}
+Wall {
+  translation 1.13932 2.97 0.238288
+  rotation -0.5771958946291473 0.5771958946291473 0.5776588945446237 -2.093935307179586
+  name "wall(3)"
+  size 0.1 0.5 3
+}
+DEF e-puck E-puck {
+  translation 0.5 -0.5 0
+  rotation 0 0 1 1.57
+  controller "bug_0_controller"
+  supervisor TRUE
+  camera_fieldOfView 0.1
+  distance_sensor_numberOfRays 7
+  turretSlot [
+    Compass {
+    }
+    DistanceSensor {
+      type "sonar"
+      numberOfRays 7
+    }
+    GPS {
+    }
+  ]
+}
