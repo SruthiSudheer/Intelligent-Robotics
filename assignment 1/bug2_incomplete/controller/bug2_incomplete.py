@@ -125,9 +125,9 @@ def robot(supervisor):
                         print('corner_after_wall_following')
                         left_speed = 6.28 * 0.25  
         
-                left_motor.setVelocity(left_speed)
-                right_motor.setVelocity(right_speed)
-                pass
-        
+            left_motor.setVelocity(left_speed)
+            right_motor.setVelocity(right_speed)
+            pass
+
 
 robot(supervisor)
