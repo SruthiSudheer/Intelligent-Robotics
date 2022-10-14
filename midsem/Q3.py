@@ -82,10 +82,7 @@ class Graph():
 
 destination = (0,2,0)
 start_point = (0.5,-1,0)
-p1, p2, p3, p4, p5 = [(0, 0), (1, 0), (5, 1), (0, 1),(0,3)]
-poly1 = (p1, p2, p3, p4)
-P1, P2, P3, P4, P5 = [(0.5, 0.5), (1.5, 0.5), (5.5, 1.5), (0.5, 1.5),(0.5,3.5)]
-poly2 = (P1, P2, P3, P4, P5)
+
 polygons = [poly1,poly2]
 visible_graph = visibility_graph(start_point, destination, polygons)
 
